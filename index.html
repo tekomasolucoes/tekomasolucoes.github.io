@@ -1,31 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tekoma Soluções</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Tekoma é especialista em otimização de processos de negócio, automação e digitalização.">
+  <title>Tekoma Tecnologia LTDA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: auto; }
-    h1 { color: #006699; }
-    footer { margin-top: 3rem; font-size: 0.9rem; color: #666; text-align: center; }
+    :root {
+      --cor-primaria: #2B2D42;
+      --cor-secundaria: #EDF2F4;
+      --cor-fundo: #F8F9FA;
+      --cor-texto: #2B2D42;
+      --cor-destaque: #EF233C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      color: var(--cor-texto);
+      background-color: var(--cor-fundo);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--cor-primaria);
+      color: var(--cor-secundaria);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    body {
+      padding-top: 80px;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: var(--cor-secundaria);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, var(--cor-primaria), var(--cor-destaque));
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background-color: white;
+      color: var(--cor-destaque);
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .hero a:hover {
+      background-color: var(--cor-destaque);
+      color: white;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      color: var(--cor-primaria);
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    .section p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      background-color: #E2E8F0;
+      padding: 60px 40px;
+    }
+
+    .contact h3 {
+      color: var(--cor-primaria);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .contact a.email {
+      background-color: var(--cor-primaria);
+    }
+
+    .contact a:hover {
+      opacity: 0.8;
+    }
+
+    .contact a svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    footer {
+      background-color: var(--cor-primaria);
+      color: var(--cor-secundaria);
+      text-align: center;
+      padding: 20px 40px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>Bem-vindo à Tekoma Tecnologia</h1>
-  <p>Especialistas em implantação, customização e integração com o ERP Sankhya.</p>
+  <header>
+    <h1>Tekoma</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-  <h2>O que fazemos</h2>
-  <ul>
-    <li>Implantação do ERP Sankhya</li>
-    <li>Treinamentos personalizados</li>
-    <li>Desenvolvimento de add-ons e conectores</li>
-  </ul>
+  <section class="hero">
+    <h2>Transformamos processos em resultados</h2>
+    <p>Especialistas em otimizar processos de negócio com tecnologia, automação e inteligência estratégica.</p>
+    <a href="#contato">Solicite uma conversa gratuita</a>
+  </section>
 
-  <h2>Contato</h2>
-  <p>Email: contato@tekoma.com.br</p>
+  <section class="section" id="sobre">
+    <h3>Sobre a Tekoma</h3>
+    <p>Com mais de 10 anos de experiência no mercado, a Tekoma Tecnologia é especializada em transformar desafios em soluções eficientes por meio da otimização de processos, automações inteligentes e digitalização.</p>
+    <p>Atuamos lado a lado com pequenas e médias empresas, oferecendo consultoria estratégica e soluções tecnológicas que potencializam a gestão, reduzem custos operacionais e aumentam a produtividade.</p>
+    <p>Nosso compromisso é simplificar o dia a dia da sua empresa com tecnologia aplicada de forma inteligente e personalizada. Seja na estruturação de processos, na implantação de ferramentas de automação ou na digitalização completa de operações, a Tekoma entrega resultados concretos e sustentáveis.</p>
+    <p>Se você busca evoluir a gestão da sua empresa e preparar seu negócio para o futuro, conte com a expertise de quem entende do assunto.</p>
+  </section>
+
+  <section class="contact" id="contato">
+    <h3>Entre em Contato</h3>
+    <div class="contact-links">
+      <a href="https://wa.me/5534991387198" target="_blank" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.001 3C9.375 3 4 8.375 4 15c0 2.625.875 5.063 2.313 7.031L4 29l7.188-2.25C12.938 27.25 14.438 27.75 16 27.75c6.625 0 12-5.375 12-12.031C28 8.375 22.625 3 16.001 3zm0 2c5.563 0 10 4.438 10 10.031 0 5.563-4.438 10-10 10-1.438 0-2.844-.313-4.125-.938l-.438-.219-4.25 1.344 1.375-4.188-.281-.438C7.063 19.063 6 17.094 6 15 6 9.438 10.438 5 16.001 5zm-3.5 6c-.281 0-.531.094-.75.313-.375.438-.938 1.125-.938 2.063 0 1.281.844 2.688 1.938 3.719C14.938 18.594 17 19.5 18.5 19.5c.938 0 1.563-.563 1.969-.938.188-.188.25-.5.094-.75l-.906-1.781c-.094-.188-.313-.375-.563-.375-.156 0-.375.094-.625.281-.344.25-.75.563-1 .563-.75 0-2.406-1.5-2.531-2.281-.031-.188.094-.344.313-.563.25-.281.531-.625.531-.906 0-.188-.094-.438-.156-.625l-.438-1.094c-.094-.25-.313-.406-.563-.406z"/></svg>
+      </a>
+      <a href="mailto:contato@tekoma.com.br" class="email" aria-label="E-mail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/></svg>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Tekoma Soluções LTDA
+    <p>&copy; 2025 Tekoma Tecnologia LTDA. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
